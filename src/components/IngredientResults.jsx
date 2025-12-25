@@ -1,0 +1,262 @@
+import { useState } from "react";
+import { jsPDF } from "jspdf";
+import { motion } from "framer-motion";
+import "../styles/IngredientResults.css";
+
+const IngredientResults = ({ results = [], logo, disclaimerText }) => {
+  const [copiedIndex, setCopiedIndex] = useState(null);
+  const [copiedAll, setCopiedAll] = useState(false);
+  const [successAction, setSuccessAction] = useState(null);
+
+  const triggerSuccess = (action) => {
+    setSuccessAction(action);
+    setTimeout(() => setSuccessAction(null), 1200);
+  };
+
+  const fmt = (v) => String(v ?? "");
+  const isUnknown = (name = "") => fmt(name).toLowerCase() === "unknown ingredient";
+
+  const formatIngredient = (item) => {
+    const name = fmt(item?.name);
+    const aliases = Array.isArray(item?.aliases) ? item.aliases : [];
+    const category = fmt(item?.category);
+    const type = fmt(item?.type);
+    const effect = fmt(item?.effect);
+
+    return `Ingredient: ${name}
+${aliases.length ? "Also known as: " + aliases.join(", ") : ""}
+Category: ${category}
+Type: ${type}
+Effect: ${effect}`.trim();
+  };
+
+  const writeClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+  };
+
+  const handleCopy = async (item, idx) => {
+    await writeClipboard(formatIngredient(item));
+    setCopiedIndex(idx);
+    triggerSuccess("copy");
+    setTimeout(() => setCopiedIndex(null), 1500);
+  };
+
+  const handleCopyAll = async () => {
+    const allDetails = results.map(formatIngredient).join("\n\n---\n\n");
+    await writeClipboard(allDetails);
+    setCopiedAll(true);
+    triggerSuccess("copyAll");
+    setTimeout(() => setCopiedAll(false), 2000);
+  };
+
+  const handleExportTxt = () => {
+    const content = results.map(formatIngredient).join("\n\n---\n\n");
+    const blob = new Blob([content], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "ingredient_translation.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+    triggerSuccess("txt");
+  };
+
+  const handleExportJson = () => {
+    const blob = new Blob([JSON.stringify(results, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "ingredient_translation.json";
+    a.click();
+    URL.revokeObjectURL(url);
+    triggerSuccess("json");
+  };
+
+  const handleExportPdf = () => {
+    const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+
+    if (logo) {
+      // assumes base64 PNG (data URL) or image alias already added to doc
+      doc.addImage(logo, "PNG", 15, 8, 20, 20);
+    }
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(16);
+    doc.text(
+      "Ingredient Label Translation Report",
+      pageWidth / 2,
+      20,
+      { align: "center" }
+    );
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(12);
+
+    let y = 35;
+
+    results.forEach((item, idx) => {
+      doc.setFont("helvetica", "bold");
+      doc.text(`Ingredient: ${fmt(item?.name)}`, 20, y);
+      y += 8;
+
+      const aliases = Array.isArray(item?.aliases) ? item.aliases : [];
+      if (aliases.length) {
+        doc.setFont("helvetica", "italic");
+        doc.text(`Also known as: ${aliases.join(", ")}`, 30, y);
+        y += 8;
+      }
+
+      doc.setFont("helvetica", "normal");
+      doc.text(`Category: ${fmt(item?.category)}`, 30, y); y += 8;
+      doc.text(`Type: ${fmt(item?.type)}`, 30, y); y += 8;
+
+      const effectLines = doc.splitTextToSize(`Effect: ${fmt(item?.effect)}`, pageWidth - 40);
+      doc.text(effectLines, 30, y);
+      y += effectLines.length * 8 + 10;
+
+      if (y > pageHeight - 40 && idx !== results.length - 1) {
+        doc.addPage();
+        y = 20;
+      }
+    });
+
+    const disclaimer = disclaimerText || "Disclaimer: This report is for educational purposes only and should not be considered medical advice. Please consult a qualified healthcare professional before making dietary or health decisions.";
+    const disclaimerLines = doc.splitTextToSize(disclaimer, pageWidth - 40);
+
+    if (y > pageHeight - 50) {
+      doc.addPage();
+      y = 20;
+    }
+
+    doc.setFont("helvetica", "italic");
+    doc.setFontSize(10);
+    doc.text(disclaimerLines, pageWidth / 2, pageHeight - 30, { align: "center" });
+
+    // Page numbers
+    const pageCount = doc.internal.getNumberOfPages();
+    for (let i = 1; i <= pageCount; i++) {
+      doc.setPage(i);
+      doc.setFontSize(9);
+      doc.setFont("helvetica", "italic");
+      doc.text(
+        `Page ${i} of ${pageCount} • Generated by Ingredient Label Translator`,
+        pageWidth / 2,
+        pageHeight - 10,
+        { align: "center" }
+      );
+    }
+
+    doc.save("ingredient_translation.pdf");
+    triggerSuccess("pdf");
+  };
+
+  if (!results.length) {
+    return (
+      <p className="no-results">
+        No matches found. Try checking spelling or using a different label.
+      </p>
+    );
+  }
+
+  const getIcon = (type = "", name = "") => {
+    if (isUnknown(name)) return "❓";
+    const t = fmt(type).toLowerCase();
+    if (t.includes("natural")) return "✅";
+    if (t.includes("derived")) return "🟡";
+    if (t.includes("synthetic")) return "⚠️";
+    return "ℹ️";
+  };
+
+  const toneFromType = (type = "", name = "") => {
+    if (isUnknown(name)) return "unknown";
+    const t = fmt(type).toLowerCase();
+    if (t.includes("synthetic")) return "synthetic";
+    if (t.includes("natural")) return "natural";
+    if (t.includes("derived")) return "derived";
+    return "default";
+  };
+
+  const MotionButton = motion.button;
+
+  const topActions = [
+    { key: "copyAll", label: copiedAll ? "Copied All!" : "Copy All Results", onClick: handleCopyAll, className: "btn btn-primary" },
+    { key: "txt", label: "Export TXT", onClick: handleExportTxt, className: "btn btn-blue" },
+    { key: "json", label: "Export JSON", onClick: handleExportJson, className: "btn btn-green" },
+    { key: "pdf", label: "Export PDF", onClick: handleExportPdf, className: "btn btn-red" },
+  ];
+
+  return (
+    <div className="ingredient-results-page">
+      {/* Top action buttons */}
+      <div className="actions-row">
+        {topActions.map(({ key, label, onClick, className }) => (
+          <MotionButton
+            key={key}
+            onClick={onClick}
+            aria-label={label}
+            animate={successAction === key ? { scale: [1, 1.1, 1], boxShadow: "0 0 12px rgba(34,197,94,0.8)" } : {}}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            className={className}
+          >
+            {label}
+          </MotionButton>
+        ))}
+      </div>
+
+      {/* Results Grid */}
+      <div className="results-grid" role="list">
+        {results.map((item, idx) => {
+          const tone = toneFromType(item?.type, item?.name);
+          return (
+            <div key={idx} className={`result-card tone-${tone}`} role="listitem">
+              <button
+                type="button"
+                onClick={() => handleCopy(item, idx)}
+                className="copy-btn"
+                aria-label={`Copy details for ${fmt(item?.name)}`}
+              >
+                {copiedIndex === idx ? "Copied!" : "Copy"}
+              </button>
+
+              <div className="title-row">
+                <span className="tone-icon" aria-hidden="true">{getIcon(item?.type, item?.name)}</span>
+                <h3 className="ingredient-name">{fmt(item?.name)}</h3>
+              </div>
+              {Array.isArray(item?.aliases) && item.aliases.length > 0 && !isUnknown(item?.name) && (
+                <p className="aliases">
+                Also known as: {item.aliases.join(", ")}
+              </p>
+              )}
+
+              {!isUnknown(item?.name) && (
+                <>
+                  <p className="meta"><span className="meta-label">Category:</span> {fmt(item?.category)}</p>
+                  <p className="meta"><span className="meta-label">Type:</span> {fmt(item?.type)}</p>
+                </>
+              )}
+
+              <p className="effect">{fmt(item?.effect)}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default IngredientResults;

@@ -1,0 +1,139 @@
+/* Page layout */
+.ingredient-results-page {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Top actions */
+.actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.12s ease, filter 0.2s ease;
+}
+.btn:hover { filter: brightness(0.95); }
+.btn:active { transform: translateY(1px); }
+
+.btn-primary { background-color: #7e22ce; } /* purple */
+.btn-blue { background-color: #2563eb; }
+.btn-green { background-color: #16a34a; }
+.btn-red { background-color: #dc2626; }
+
+/* Results grid */
+.results-grid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Cards */
+.result-card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.result-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.12);
+}
+
+/* Tone colorways (background + border) */
+.tone-unknown { background: #f3f4f6; border-color: #d1d5db; } /* gray */
+.tone-synthetic { background: #fef2f2; border-color: #fecaca; } /* red */
+.tone-natural { background: #ecfdf5; border-color: #bbf7d0; }   /* green */
+.tone-derived { background: #fefce8; border-color: #fde68a; }   /* yellow */
+.tone-default { background: #eff6ff; border-color: #bfdbfe; }   /* blue */
+
+/* Copy button */
+.copy-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #7e22ce;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+.copy-btn:hover { filter: brightness(0.95); }
+
+/* Title row */
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tone-icon { font-size: 1.5rem; }
+
+.ingredient-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #1f2937; /* gray-800 */
+  margin: 0;
+}
+
+/* Aliases + meta */
+.aliases {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-style: italic;
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+.meta {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.meta-label {
+  font-weight: 600;
+}
+
+/* Effect text */
+.effect {
+  margin-top: 0.75rem;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* No results */
+.no-results {
+  color: #dc2626;
+  margin-top: 1.5rem;
+  text-align: center;
+}

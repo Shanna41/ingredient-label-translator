@@ -1,0 +1,138 @@
+/* Theme tokens */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  color: var(--text-800);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand: #c59fe7;
+  --brand-focus: rgba(127, 86, 217, 0.2);
+  --bg-grad-top: #e8daf7;
+  --bg-grad-bottom: #f9f4f4;
+
+  --text-900: #111827;
+  --text-800: #1f2937;
+  --text-700: #374151;
+
+  --border: #d1d5db;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Page shell */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, var(--bg-grad-top), var(--bg-grad-bottom));
+}
+
+/* Header */
+.app-header {
+  width: 100%;
+  background-color: var(--brand);
+  color: #fff;
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+.app-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.app-logo-img {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.app-title { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.05em; margin: 0; }
+
+/* Main */
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+  text-align: center;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin: 0 0 1rem 0;
+}
+
+/* Disclaimer */
+.disclaimer-box { margin-top: 1rem; width: 100%; text-align: left; }
+.disclaimer-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-700);
+}
+.disclaimer-textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-700);
+  outline: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.disclaimer-textarea:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--brand-focus);
+}
+
+/* Loading + results */
+.loading { margin-top: 2rem; color: var(--brand); font-weight: 600; }
+.results-wrap { width: 100%; margin-top: 2rem; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .app-main { padding: 1rem; }
+  .card { padding: 1.25rem; border-radius: 0.75rem; }
+  .card-title { font-size: 1.5rem; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* Print (if you ever print the page—not jsPDF PDFs) */
+@media print {
+  .app-header, .app-logo-emoji { display: none !important; }
+  .app { background: #fff !important; }
+  .card { box-shadow: none !important; }
+}

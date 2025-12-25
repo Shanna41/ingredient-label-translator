@@ -1,0 +1,104 @@
+/* Layout */
+.ingredient-input-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Input container + textarea */
+.input-container {
+  border: 1px solid #e5e7eb; /* gray-200 */
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 0.75rem;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.input-container.success {
+  border-color: #86efac; /* green-300 */
+  background: #f0fdf4;   /* green-50 */
+}
+
+.ingredient-textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #111827; /* gray-900 */
+}
+
+.ingredient-textarea::placeholder {
+  color: #9ca3af; /* gray-400 */
+}
+
+/* Actions */
+.actions {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: #7f56d9; /* soft lavender/purple to match your app vibe */
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #6e46c7;
+}
+
+.btn-secondary {
+  background: #e5e7eb; /* gray-200 */
+  color: #111827;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db; /* gray-300 */
+}
+
+/* Submit status chip */
+.submit-status {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #16a34a;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.submit-status.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility helper (sr-only) */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}

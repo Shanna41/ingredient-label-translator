@@ -1,0 +1,1104 @@
+[
+   {
+    "name": "sodium benzoate",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E211",
+    "functions": ["antimicrobial","preservative"],
+    "notes": "Common in acidic beverages and condiments.",
+    "effect": "May trigger allergic reactions, asthma, or hyperactivity in sensitive individuals."
+  },
+  {
+    "name": "benzoic acid",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E210",
+    "functions": ["antimicrobial","preservative"],
+    "notes": "Parent compound of benzoates; used in acidic foods.",
+    "effect": "Generally recognized as safe, but excessive intake may irritate the stomach."
+  },
+  {
+    "name": "potassium sorbate",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E202",
+    "functions": ["antimold","antiyeast","preservative"],
+    "notes": "Often used in cheeses, baked goods, juices.",
+    "effect": "Considered safe, but may cause mild skin or respiratory irritation in sensitive people."
+  },
+  {
+    "name": "sorbic acid",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E200",
+    "functions": ["antimold","preservative"],
+    "notes": "Acid form; similar use to sorbates.",
+    "effect": "Low-toxicity preservative, but excessive intake may upset digestion."
+  },
+  {
+    "name": "calcium propionate",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E282",
+    "functions": ["antimold","preservative"],
+    "notes": "Common bread preservative to inhibit mold.",
+    "effect": "May trigger migraines or hyperactivity in some sensitive individuals."
+  },
+  {
+    "name": "sodium nitrite",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E250",
+    "functions": ["curing","antimicrobial","color_fixative"],
+    "notes": "Used in cured meats.",
+    "effect": "Can form carcinogenic nitrosamines when heated; linked to increased cancer risk if consumed frequently."
+  },
+  {
+    "name": "sodium nitrate",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E251",
+    "functions": ["curing","preservative"],
+    "notes": "Converted to nitrite in meat processing.",
+    "effect": "Similar risks as nitrites; may contribute to cancer risk in processed meats."
+  },
+  {
+    "name": "potassium nitrate",
+    "aliases": ["saltpeter"],
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E252",
+    "functions": ["curing","preservative"],
+    "notes": "Traditional curing salt.",
+    "effect": "Generally safe in small amounts, but long-term intake linked to stomach irritation and possible cancer risk."
+  },
+  {
+    "name": "sulfur dioxide",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E220",
+    "functions": ["antioxidant","antimicrobial","preservative"],
+    "notes": "Common in dried fruits and wine.",
+    "effect": "May trigger asthma attacks and allergic reactions; best avoided by sensitive individuals."
+  },
+  {
+    "name": "sodium metabisulfite",
+    "category": "preservative",
+    "type": "synthetic",
+    "e_number": "E223",
+    "functions": ["antioxidant","preservative"],
+    "notes": "May be declared as sulfites.",
+    "effect": "Can cause allergic reactions, headaches, or asthma flare-ups in sensitive people."
+  },
+  {
+  "name": "potassium metabisulfite",
+  "aliases": [],
+  "category": "preservative",
+  "type": "synthetic",
+  "e_number": "E224",
+  "functions": ["antioxidant","preservative"],
+  "notes": "Used in beverages and wines.",
+  "effect": "May trigger asthma or allergic reactions in sensitive individuals; best avoided by sulfite-sensitive people."
+},
+
+  {
+    "name": "BHA",
+    "aliases": ["butylated hydroxyanisole"],
+    "category": "antioxidant",
+    "type": "synthetic",
+    "e_number": "E320",
+    "functions": ["antioxidant","preservative"],
+    "notes": "Helps prevent rancidity in fats/oils.",
+    "effect": "Possible endocrine disruptor; linked to cancer in animal studies. Best minimized."
+  },
+  {
+    "name": "BHT",
+    "aliases": ["butylated hydroxytoluene"],
+    "category": "antioxidant",
+    "type": "synthetic",
+    "e_number": "E321",
+    "functions": ["antioxidant","preservative"],
+    "notes": "Used to stabilize oils and cereals.",
+    "effect": "Suspected to disrupt hormones; limited intake recommended."
+  },
+  {
+    "name": "TBHQ",
+    "aliases": ["tertiary butylhydroquinone"],
+    "category": "antioxidant",
+    "type": "synthetic",
+    "e_number": "E319",
+    "functions": ["antioxidant"],
+    "notes": "Used in frying oils and snacks.",
+    "effect": "May cause nausea or hyperactivity; high doses linked to immune and neurological effects."
+  },
+  {
+    "name": "natamycin",
+    "aliases": ["pimaricin"],
+    "category": "preservative",
+    "type": "derived",
+    "e_number": "E235",
+    "functions": ["antifungal","preservative"],
+    "notes": "Surface treatment for cheeses and sausages.",
+    "effect": "Generally safe; minimal absorption in the body, but overuse may contribute to antifungal resistance."
+  },
+  {
+    "name": "sucrose",
+    "aliases": ["table sugar"],
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["sweetener"],
+    "notes": "Common sugar from cane or beet.",
+    "effect": "Excess intake contributes to obesity, diabetes, and tooth decay."
+  },
+  {
+    "name": "glucose",
+    "aliases": ["dextrose"],
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["sweetener","fermentable sugar"],
+    "notes": "Often used in bakery and confections.",
+    "effect": "Spikes blood sugar rapidly; best limited for metabolic health."
+  },
+  {
+    "name": "fructose",
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["sweetener"],
+    "notes": "Fruit sugar; also used in syrups.",
+    "effect": "Processed fructose (not whole fruit) stresses the liver and may promote insulin resistance."
+  },
+  {
+    "name": "high fructose corn syrup",
+    "aliases": ["HFCS"],
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["sweetener"],
+    "notes": "Corn-derived syrup with higher fructose content.",
+    "effect": "Linked to obesity, diabetes, and metabolic issues with overconsumption."
+  },
+  {
+    "name": "lactose",
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["bulking","sweetener"],
+    "notes": "Milk sugar; lower sweetness.",
+    "effect": "Can cause digestive discomfort in lactose-intolerant individuals."
+  },
+  {
+    "name": "maltose",
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["sweetener"],
+    "notes": "Disaccharide from starch hydrolysis.",
+    "effect": "Moderate effect on blood sugar; excessive intake may contribute to weight gain."
+  },
+  {
+    "name": "invert sugar",
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["sweetener","humectant"],
+    "notes": "Mixture of glucose and fructose.",
+    "effect": "Raises blood sugar quickly; frequent use may contribute to metabolic issues."
+  },
+  {
+    "name": "stevia extract",
+    "aliases": ["steviol glycosides"],
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "E960",
+    "functions": ["high_intensity_sweetener"],
+    "notes": "Plant-derived, high-intensity sweetener.",
+    "effect": "Generally safe; may help reduce blood sugar spikes compared to regular sugar."
+  },
+  {
+    "name": "monk fruit extract",
+    "aliases": ["luo han guo"],
+    "category": "sweetener",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["high_intensity_sweetener"],
+    "notes": "High-intensity sweetener from monk fruit.",
+    "effect": "Considered safe and natural; good alternative for managing blood sugar."
+  },
+  {
+    "name": "sucralose",
+    "aliases": ["splenda"],
+    "category": "sweetener",
+    "type": "synthetic",
+    "e_number": "E955",
+    "functions": ["high_intensity_sweetener"],
+    "notes": "Heat-stable high-intensity sweetener.",
+    "effect": "May disrupt gut bacteria and increase cravings for sweet foods."
+  },
+  {
+    "name": "aspartame",
+    "category": "sweetener",
+    "type": "synthetic",
+    "e_number": "E951",
+    "functions": ["high_intensity_sweetener"],
+    "notes": "Not heat-stable; contains phenylalanine.",
+    "effect": "Unsafe for people with PKU; may cause headaches or mood changes in sensitive individuals."
+  },
+  {
+    "name": "acesulfame potassium",
+    "aliases": ["acesulfame K"],
+    "category": "sweetener",
+    "type": "synthetic",
+    "e_number": "E950",
+    "functions": ["high_intensity_sweetener"],
+    "notes": "Often blended with other sweeteners.",
+    "effect": "Generally recognized as safe, but animal studies suggest possible effects on insulin response."
+  },
+  {
+    "name": "saccharin",
+    "category": "sweetener",
+    "type": "synthetic",
+    "e_number": "E954",
+    "functions": ["high_intensity_sweetener"],
+    "notes": "High-intensity sweetener used in beverages.",
+    "effect": "Linked to bladder cancer in early studies; now considered safe at low doses, but may cause bitter aftertaste."
+  },
+  {
+    "name": "erythritol",
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "E968",
+    "functions": ["polyol","bulking","sweetener"],
+    "notes": "Sugar alcohol; low-calorie.",
+    "effect": "Generally well tolerated, but high intake may cause digestive upset in sensitive people."
+  },
+  {
+    "name": "xylitol",
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "E967",
+    "functions": ["polyol","sweetener"],
+    "notes": "Common in sugar-free gums.",
+    "effect": "Helps prevent cavities; may cause bloating or diarrhea in excess."
+  },
+  {
+    "name": "sorbitol",
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "E420",
+    "functions": ["polyol","humectant","sweetener"],
+    "notes": "Also used to retain moisture.",
+    "effect": "Can cause gas, bloating, and diarrhea in sensitive individuals when consumed in large amounts."
+  },
+  {
+    "name": "maltitol",
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "E965",
+    "functions": ["polyol","sweetener"],
+    "notes": "Used in sugar-free chocolates.",
+    "effect": "May cause digestive upset and laxative effects if consumed in excess."
+  },
+  {
+    "name": "isomalt",
+    "category": "sweetener",
+    "type": "derived",
+    "e_number": "E953",
+    "functions": ["polyol","sweetener"],
+    "notes": "Resistant to crystallization in candies.",
+    "effect": "Generally safe, but large amounts may lead to bloating or diarrhea."
+  },
+  {
+    "name": "caramel color",
+    "category": "color",
+    "type": "derived",
+    "e_number": "E150a-d",
+    "functions": ["color"],
+    "notes": "Brown color from heated sugars.",
+    "effect": "Certain classes may contain 4-MEI, a potential carcinogen; safer in moderation."
+  },
+  {
+    "name": "annatto",
+    "aliases": ["bixin","norbixin"],
+    "category": "color",
+    "type": "natural",
+    "e_number": "E160b",
+    "functions": ["color"],
+    "notes": "Orange color from annatto seeds.",
+    "effect": "Generally safe; may cause rare allergic reactions."
+  },
+  {
+    "name": "beta-carotene",
+    "category": "color",
+    "type": "natural",
+    "e_number": "E160a",
+    "functions": ["color","provitamin A"],
+    "notes": "Orange colorant; antioxidant.",
+    "effect": "Supports eye and skin health; excessive supplements may increase cancer risk in smokers."
+  },
+  {
+    "name": "beet juice color",
+    "aliases": ["beetroot red"],
+    "category": "color",
+    "type": "natural",
+    "e_number": "E162",
+    "functions": ["color"],
+    "notes": "Red color from beets.",
+    "effect": "Safe and natural; provides antioxidants."
+  },
+  {
+    "name": "paprika extract",
+    "category": "color",
+    "type": "natural",
+    "e_number": "E160c",
+    "functions": ["color"],
+    "notes": "Orange-red colorant.",
+    "effect": "Safe and natural; may contain beneficial carotenoids."
+  },
+  {
+    "name": "turmeric extract",
+    "aliases": ["curcumin"],
+    "category": "color",
+    "type": "natural",
+    "e_number": "E100",
+    "functions": ["color","antioxidant"],
+    "notes": "Yellow color.",
+    "effect": "Anti-inflammatory properties; beneficial in moderate dietary amounts."
+  },
+  {
+    "name": "spirulina extract",
+    "aliases": ["phycocyanin"],
+    "category": "color",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["color"],
+    "notes": "Natural blue color.",
+    "effect": "Safe and nutrient-rich; contains antioxidants and proteins."
+  },
+  {
+    "name": "titanium dioxide",
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E171",
+    "functions": ["whitener","opacity"],
+    "notes": "Used to whiten; subject to regional regulations.",
+    "effect": "Controversial; may cause inflammation at high exposure levels. Restricted in the EU."
+  },
+  {
+    "name": "FD&C Red 40",
+    "aliases": ["Allura Red AC"],
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E129",
+    "functions": ["color"],
+    "notes": "Synthetic azo dye.",
+    "effect": "Linked to hyperactivity and behavioral issues in children; best avoided by sensitive individuals."
+  },
+  {
+    "name": "FD&C Yellow 5",
+    "aliases": ["Tartrazine"],
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E102",
+    "functions": ["color"],
+    "notes": "Synthetic azo dye.",
+    "effect": "May trigger allergies or asthma; linked to hyperactivity in children."
+  },
+  {
+    "name": "FD&C Yellow 6",
+    "aliases": ["Sunset Yellow FCF"],
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E110",
+    "functions": ["color"],
+    "notes": "Synthetic azo dye.",
+    "effect": "Associated with allergic reactions and behavioral issues; restricted in some countries."
+  },
+  {
+    "name": "FD&C Blue 1",
+    "aliases": ["Brilliant Blue FCF"],
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E133",
+    "functions": ["color"],
+    "notes": "Synthetic dye.",
+    "effect": "Generally considered safe, but may cause allergic reactions in sensitive individuals."
+  },
+  {
+    "name": "FD&C Blue 2",
+    "aliases": ["Indigotine"],
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E132",
+    "functions": ["color"],
+    "notes": "Synthetic dye.",
+    "effect": "Animal studies suggest potential cancer risk; precautionary avoidance is recommended."
+  },
+  {
+    "name": "FD&C Green 3",
+    "category": "color",
+    "type": "synthetic",
+    "e_number": "E143",
+    "functions": ["color"],
+    "notes": "Synthetic dye.",
+    "effect": "Possible allergic reactions; limited safety data compared to other dyes."
+  },
+  {
+    "name": "soy lecithin",
+    "aliases": ["lecithin"],
+    "category": "emulsifier",
+    "type": "derived",
+    "e_number": "E322",
+    "functions": ["emulsifier"],
+    "notes": "From soy or sunflower.",
+    "effect": "Generally safe; may cause issues for those with soy allergies."
+  },
+  {
+     "name": "sunflower lecithin",
+    "aliases": ["lecithin (sunflower)"],
+    "category": "emulsifier",
+    "type": "natural",
+    "e_number": "E322",
+    "functions": ["emulsifier"],
+    "notes": "Allergen-friendly alternative to soy.",
+    "effect": "Safe and well tolerated; often preferred over soy lecithin."
+  },
+  {
+    "name": "mono- and diglycerides",
+    "category": "emulsifier",
+    "type": "derived",
+    "e_number": "E471",
+    "functions": ["emulsifier","dough_conditioner"],
+    "notes": "From fats and oils; may be animal- or plant-derived.",
+    "effect": "Can contain trans fat residues; moderate consumption advised."
+  },
+  {
+    "name": "DATEM",
+    "aliases": ["diacetyl tartaric acid esters of mono- and diglycerides"],
+    "category": "dough_conditioner",
+    "type": "derived",
+    "e_number": "E472e",
+    "functions": ["emulsifier","dough_strengthener"],
+    "notes": "Common in breads.",
+    "effect": "Generally recognized as safe, but may cause digestive upset in sensitive individuals."
+  },
+  {
+    "name": "polysorbate 80",
+    "category": "emulsifier",
+    "type": "synthetic",
+    "e_number": "E433",
+    "functions": ["emulsifier"],
+    "notes": "Used in ice creams and sauces.",
+    "effect": "May disrupt gut barrier function in animal studies; best limited for gut health."
+  },
+  {
+    "name": "polysorbate 60",
+    "category": "emulsifier",
+    "type": "synthetic",
+    "e_number": "E435",
+    "functions": ["emulsifier"],
+    "notes": "Used in whipped toppings, baked goods.",
+    "effect": "Considered safe in small amounts, but excessive intake may affect digestion."
+  },
+  {
+    "name": "carrageenan",
+    "category": "stabilizer",
+    "type": "derived",
+    "e_number": "E407",
+    "functions": ["thickener","stabilizer"],
+    "notes": "From red seaweed; used in dairy alternatives.",
+    "effect": "Linked to gut inflammation in some studies; may worsen digestive issues for sensitive individuals."
+  },
+  {
+    "name": "gellan gum",
+    "category": "stabilizer",
+    "type": "synthetic",
+    "e_number": "E418",
+    "functions": ["gelling","stabilizer"],
+    "notes": "Microbial polysaccharide; used in beverages.",
+    "effect": "Generally well tolerated, though excess intake may cause bloating."
+  },
+  {
+    "name": "guar gum",
+    "category": "thickener",
+    "type": "natural",
+    "e_number": "E412",
+    "functions": ["thickener"],
+    "notes": "From guar beans; often in gluten-free baking.",
+    "effect": "Can help with blood sugar control; high amounts may cause gas or bloating."
+  },
+  {
+    "name": "xanthan gum",
+    "category": "thickener",
+    "type": "derived",
+    "e_number": "E415",
+    "functions": ["thickener","stabilizer"],
+    "notes": "Fermentation-derived; widely used.",
+    "effect": "Safe for most, but large doses may cause digestive discomfort."
+  },
+  {
+    "name": "locust bean gum",
+    "aliases": ["carob bean gum"],
+    "category": "thickener",
+    "type": "natural",
+    "e_number": "E410",
+    "functions": ["thickener","stabilizer"],
+    "notes": "From carob seeds.",
+    "effect": "Generally safe; beneficial fiber, but excess may cause gas."
+  },
+  {
+    "name": "agar",
+    "aliases": ["agar-agar"],
+    "category": "gelling_agent",
+    "type": "natural",
+    "e_number": "E406",
+    "functions": ["gelling"],
+    "notes": "Seaweed-derived gelling agent.",
+    "effect": "Safe and natural; may support digestion as a mild laxative."
+  },
+  {
+    "name": "pectin",
+    "category": "gelling_agent",
+    "type": "natural",
+    "e_number": "E440",
+    "functions": ["gelling","stabilizer"],
+    "notes": "From fruits; used in jams.",
+    "effect": "Supports gut health as soluble fiber; generally beneficial."
+  },
+  {
+    "name": "cellulose gum",
+    "aliases": ["carboxymethyl cellulose","CMC"],
+    "category": "thickener",
+    "type": "synthetic",
+    "e_number": "E466",
+    "functions": ["thickener","stabilizer"],
+    "notes": "Modified cellulose.",
+    "effect": "Non-digestible; excessive intake may cause bloating or loose stools."
+  },
+  {
+    "name": "methylcellulose",
+    "category": "thickener",
+    "type": "synthetic",
+    "e_number": "E461",
+    "functions": ["thickener","gelling"],
+    "notes": "Thermo-gelling properties.",
+    "effect": "Used as a laxative in supplements; large amounts in food may cause digestive upset."
+  },
+  {
+    "name": "microcrystalline cellulose",
+    "aliases": ["MCC"],
+    "category": "fiber",
+    "type": "derived",
+    "e_number": "E460",
+    "functions": ["bulking","fiber"],
+    "notes": "Texturizer and bulking agent.",
+    "effect": "Non-digestible fiber; safe for most, though high intake may cause bloating."
+  },
+  {
+    "name": "propylene glycol alginate",
+    "aliases": ["PGA"],
+    "category": "emulsifier",
+    "type": "synthetic",
+    "e_number": "E405",
+    "functions": ["emulsifier","stabilizer"],
+    "notes": "From alginic acid.",
+    "effect": "Generally considered safe, but high consumption may affect digestion."
+  },
+  {
+    "name": "modified food starch",
+    "category": "thickener",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["thickener","stabilizer"],
+    "notes": "Chemically or physically modified starches.",
+    "effect": "Safe for most people; can raise blood sugar quickly if heavily refined."
+  },
+  {
+    "name": "citric acid",
+    "category": "acidulant",
+    "type": "derived",
+    "e_number": "E330",
+    "functions": ["acidulant","preservative","flavor"],
+    "notes": "Common in beverages, candies.",
+    "effect": "Generally safe; may irritate mouth ulcers in sensitive individuals."
+  },
+  {
+    "name": "malic acid",
+    "category": "acidulant",
+    "type": "synthetic",
+    "e_number": "E296",
+    "functions": ["acidulant","flavor"],
+    "notes": "Sourness in candies and drinks.",
+    "effect": "Safe in normal amounts; excessive intake may cause tooth enamel erosion."
+  },
+  {
+    "name": "lactic acid",
+    "category": "acidulant",
+    "type": "derived",
+    "e_number": "E270",
+    "functions": ["acidulant","preservative"],
+    "notes": "Fermentation-derived; may be dairy-free.",
+    "effect": "Generally safe; supports gut health in fermented foods."
+  },
+  {
+    "name": "tartaric acid",
+    "category": "acidulant",
+    "type": "natural",
+    "e_number": "E334",
+    "functions": ["acidulant"],
+    "notes": "Found in grapes and wine products.",
+    "effect": "Safe in small amounts; high doses may cause stomach irritation."
+  },
+  {
+    "name": "acetic acid",
+    "aliases": ["vinegar"],
+    "category": "acidulant",
+    "type": "natural",
+    "e_number": "E260",
+    "functions": ["acidulant","preservative"],
+    "notes": "Vinegar is aqueous acetic acid.",
+    "effect": "Supports blood sugar control; excessive intake may damage tooth enamel."
+  },
+  {
+    "name": "phosphoric acid",
+    "category": "acidulant",
+    "type": "synthetic",
+    "e_number": "E338",
+    "functions": ["acidulant"],
+    "notes": "Common in colas.",
+    "effect": "Excessive intake linked to lower bone density and kidney stress."
+  },
+  {
+    "name": "ascorbic acid",
+    "aliases": ["vitamin C"],
+    "category": "antioxidant",
+    "type": "natural",
+    "e_number": "E300",
+    "functions": ["antioxidant","dough_conditioner"],
+    "notes": "Also used to prevent browning.",
+    "effect": "Supports immune function and reduces oxidative stress; generally beneficial."
+  },
+  {
+    "name": "monosodium glutamate",
+    "aliases": ["MSG"],
+    "category": "flavor_enhancer",
+    "type": "synthetic",
+    "e_number": "E621",
+    "functions": ["umami_enhancer"],
+    "notes": "Savory flavor enhancer.",
+    "effect": "Safe for most, though some report headaches or sensitivity (‘Chinese restaurant syndrome’)."
+  },
+  {
+    "name": "disodium inosinate",
+    "aliases": ["IMP"],
+    "category": "flavor_enhancer",
+    "type": "synthetic",
+    "e_number": "E631",
+    "functions": ["umami_enhancer"],
+    "notes": "Often with MSG or GMP.",
+    "effect": "Enhances savory flavor; often paired with MSG. Should be avoided by people with gout due to purine content."
+  },
+  {
+    "name": "disodium guanylate",
+    "aliases": ["GMP"],
+    "category": "flavor_enhancer",
+    "type": "synthetic",
+    "e_number": "E627",
+    "functions": ["umami_enhancer"],
+    "notes": "Often with MSG or IMP.",
+    "effect": "Generally safe; may worsen symptoms in gout patients."
+  },
+  {
+    "name": "yeast extract",
+    "category": "flavor_enhancer",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["umami_enhancer","flavor"],
+    "notes": "Source of glutamates; label-friendly.",
+    "effect": "Natural source of umami; may trigger reactions in people sensitive to MSG-like compounds."
+  },
+  {
+    "name": "hydrolyzed vegetable protein",
+    "aliases": ["HVP"],
+    "category": "flavor_enhancer",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["umami_enhancer"],
+    "notes": "Protein hydrolysates used for savory flavor.",
+    "effect": "Can contain free glutamates similar to MSG; may cause sensitivity in some individuals."
+  },
+  {
+    "name": "sodium bicarbonate",
+    "aliases": ["baking soda"],
+    "category": "leavening",
+    "type": "synthetic",
+    "e_number": "E500",
+    "functions": ["leavening","pH_control"],
+    "notes": "Reacts with acids to release CO2.",
+    "effect": "Safe in moderate amounts; excessive intake may cause alkalosis or stomach upset."
+  },
+  {
+    "name": "monocalcium phosphate",
+    "category": "leavening",
+    "type": "synthetic",
+    "e_number": "E341",
+    "functions": ["leavening"],
+    "notes": "Common in baking powders.",
+    "effect": "Generally recognized as safe; excess phosphorus may affect bone balance if consumed in large amounts."
+  },
+  {
+    "name": "sodium aluminum phosphate",
+    "category": "leavening",
+    "type": "synthetic",
+    "e_number": "E541",
+    "functions": ["leavening"],
+    "notes": "Slow-acting leavening acid.",
+    "effect": "Safe in small amounts; high aluminum intake may raise concerns about neurological effects."
+  },
+  {
+    "name": "ammonium bicarbonate",
+    "category": "leavening",
+    "type": "synthetic",
+    "e_number": "E503",
+    "functions": ["leavening"],
+    "notes": "Used in crackers and cookies.",
+    "effect": "Considered safe; breaks down into ammonia and CO2 during baking, leaving no residue."
+  },
+  {
+    "name": "silicon dioxide",
+    "aliases": ["silica"],
+    "category": "anti_caking",
+    "type": "synthetic",
+    "e_number": "E551",
+    "functions": ["anti_caking"],
+    "notes": "Keeps powders free-flowing.",
+    "effect": "Generally safe; excessive intake from supplements may stress kidneys."
+  },
+  {
+    "name": "calcium silicate",
+    "category": "anti_caking",
+    "type": "synthetic",
+    "e_number": "E552",
+    "functions": ["anti_caking"],
+    "notes": "Absorbs moisture in salts and powders.",
+    "effect": "Safe at food levels; high supplemental intake may affect calcium balance."
+  },
+  {
+    "name": "magnesium stearate",
+    "category": "anti_caking",
+    "type": "derived",
+    "e_number": "E470b",
+    "functions": ["anti_caking","lubricant"],
+    "notes": "Also used in supplements.",
+    "effect": "Safe in small amounts; excess may cause digestive upset."
+  },
+  {
+    "name": "dimethylpolysiloxane",
+    "aliases": ["PDMS"],
+    "category": "anti_foaming",
+    "type": "synthetic",
+    "e_number": "E900",
+    "functions": ["anti_foaming"],
+    "notes": "Antifoam in frying oils.",
+    "effect": "Generally safe; extremely small amounts are used in food."
+  },
+  {
+    "name": "glycerin",
+    "aliases": ["glycerol"],
+    "category": "humectant",
+    "type": "derived",
+    "e_number": "E422",
+    "functions": ["humectant","sweetener"],
+    "notes": "Retains moisture; also slightly sweet.",
+    "effect": "Safe for most; excessive intake may cause headaches, nausea, or diarrhea."
+  },
+  {
+    "name": "propylene glycol",
+    "category": "humectant",
+    "type": "synthetic",
+    "e_number": "E1520",
+    "functions": ["humectant","solvent"],
+    "notes": "Carrier for flavors and colors.",
+    "effect": "Safe at food levels; very high intake may cause kidney or liver stress."
+  },
+  {
+    "name": "L-cysteine",
+    "category": "dough_conditioner",
+    "type": "derived",
+    "e_number": "E920",
+    "functions": ["dough_conditioner","reducing_agent"],
+    "notes": "May be produced by fermentation.",
+    "effect": "Generally safe, but may be sourced from animal products (not vegetarian-friendly)."
+  },
+  {
+    "name": "enzymes",
+    "aliases": ["amylase","protease","lipase"],
+    "category": "dough_conditioner",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["processing_aid","dough_conditioner"],
+    "notes": "Used in bakery; typically not active in finished foods.",
+    "effect": "Safe; helps improve bread texture. Usually deactivated during baking."
+  },
+  {
+    "name": "wheat flour",
+    "aliases": ["enriched wheat flour"],
+    "category": "flour",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["structure"],
+    "notes": "Base flour in many baked goods.",
+    "effect": "Staple food; problematic for people with gluten sensitivity or celiac disease."
+  },
+  {
+    "name": "rice flour",
+    "category": "flour",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["structure","gluten_free"],
+    "notes": "Common in GF products.",
+    "effect": "Safe and gluten-free; often used as a wheat alternative."
+  },
+  {
+    "name": "tapioca starch",
+    "aliases": ["tapioca"],
+    "category": "starch",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["thickener"],
+    "notes": "From cassava; neutral flavor.",
+    "effect": "Gluten-free thickener; generally safe but high intake offers little nutrition."
+  },
+  {
+    "name": "potato starch",
+    "category": "starch",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["thickener"],
+    "notes": "Gives clarity in sauces.",
+    "effect": "Safe; provides resistant starch that may benefit gut health."
+  },
+  {
+    "name": "corn starch",
+    "aliases": ["maize starch"],
+    "category": "starch",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["thickener"],
+    "notes": "Very common in processed foods.",
+    "effect": "Safe; high use in processed foods adds calories with little nutrition."
+  },
+  {
+    "name": "inulin",
+    "category": "fiber",
+    "type": "natural",
+    "e_number": "E520",
+    "functions": ["fiber","bulking"],
+    "notes": "Prebiotic fiber from chicory; may affect GI comfort.",
+    "effect": "Supports gut health as a prebiotic; excess may cause gas or bloating."
+  },
+  {
+    "name": "oligofructose",
+    "category": "fiber",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fiber","bulking"],
+    "notes": "Prebiotic, often blended with inulin.",
+    "effect": "Feeds healthy gut bacteria; too much may cause digestive discomfort."
+  },
+  {
+    "name": "gelatin",
+    "category": "protein",
+    "type": "derived",
+    "e_number": "E441",
+    "functions": ["gelling","stabilizer"],
+    "notes": "Animal-derived; not vegan.",
+    "effect": "Provides collagen; unsuitable for vegetarians and vegans."
+  },
+  {
+    "name": "pea protein",
+    "category": "protein",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["protein","emulsifier"],
+    "notes": "Used in plant-based foods.",
+    "effect": "Nutritious, allergen-friendly protein source; may cause gas in sensitive individuals."
+  },
+  {
+    "name": "whey protein concentrate",
+    "aliases": ["WPC"],
+    "category": "protein",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["protein","emulsifier"],
+    "notes": "Dairy-derived.",
+    "effect": "High-quality protein; not suitable for lactose-intolerant individuals."
+  },
+  {
+    "name": "caseinate",
+    "aliases": ["sodium caseinate","calcium caseinate"],
+    "category": "protein",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["emulsifier","protein"],
+    "notes": "Dairy-derived emulsifier.",
+    "effect": "Useful protein additive; may trigger dairy allergies or intolerances."
+  },
+  {
+    "name": "canola oil",
+    "aliases": ["rapeseed oil (low erucic acid)"],
+    "category": "oil",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fat","texture"],
+    "notes": "Common neutral oil.",
+    "effect": "Generally safe; refining reduces nutrients, but moderate use is acceptable."
+  },
+  {
+    "name": "soybean oil",
+    "category": "oil",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fat","texture"],
+    "notes": "Widely used in processed foods.",
+    "effect": "High in omega-6 fatty acids; excessive intake may promote inflammation."
+  },
+  {
+    "name": "palm oil",
+    "category": "oil",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fat","texture"],
+    "notes": "Semi-solid at room temperature.",
+    "effect": "Stable for cooking, but high intake may raise cholesterol. Environmental concerns with production."
+  },
+  {
+    "name": "palm kernel oil",
+    "category": "oil",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fat","texture"],
+    "notes": "Harder fat fraction from palm kernel.",
+    "effect": "High in saturated fats; may raise LDL cholesterol if consumed excessively."
+  },
+  {
+    "name": "coconut oil",
+    "category": "oil",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fat","texture"],
+    "notes": "High saturated fat; distinct flavor.",
+    "effect": "Provides medium-chain triglycerides (MCTs); beneficial in moderation but raises cholesterol at high intake."
+  },
+  {
+    "name": "olive oil",
+    "category": "oil",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["fat","flavor"],
+    "notes": "Extra virgin used for flavor; refined for frying.",
+    "effect": "Rich in antioxidants and monounsaturated fats; supports heart health."
+  },
+  
+  {
+    "name": "shortening",
+    "aliases": ["hydrogenated vegetable oil"],
+    "category": "oil",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["fat","texture"],
+    "notes": "May contain partially hydrogenated oils depending on region/regulations.",
+    "effect": "Often high in trans fats; strongly linked to heart disease. Best avoided."
+  },
+  {
+    "name": "natural flavors",
+    "aliases": ["natural flavour"],
+    "category": "other",
+    "type": "mixed",
+    "e_number": "",
+    "functions": ["flavor"],
+    "notes": "Complex mixtures derived from natural sources.",
+    "effect": "Considered safe, though vague labeling makes it hard to know exact source. May cause reactions in sensitive people."
+  },
+  {
+    "name": "artificial flavors",
+    "aliases": ["artificial flavour"],
+    "category": "other",
+    "type": "synthetic",
+    "e_number": "",
+    "functions": ["flavor"],
+    "notes": "Synthesized flavor compounds.",
+    "effect": "Regulated as safe, but offer no nutritional benefit; may contribute to chemical sensitivity."
+  },
+  {
+    "name": "smoke flavor",
+    "aliases": ["liquid smoke"],
+    "category": "flavor_enhancer",
+    "type": "derived",
+    "e_number": "",
+    "functions": ["flavor"],
+    "notes": "Condensed smoke fractions for flavoring.",
+    "effect": "Generally safe; contains natural compounds that may irritate sensitive individuals."
+  },
+  {
+    "name": "salt",
+    "aliases": ["sodium chloride"],
+    "category": "other",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["flavor","preservative"],
+    "notes": "Common seasoning and preservative.",
+    "effect": "Essential mineral; excess intake linked to high blood pressure and cardiovascular risk."
+  },
+  {
+  "name": "spices",
+  "aliases": [],
+  "category": "other",
+  "type": "natural",
+  "e_number": "",
+  "functions": ["flavor"],
+  "notes": "Generic label term for spice blends.",
+  "effect": "Safe and natural; specific health effects depend on the individual spices used."
+}
+,
+  {
+    "name": "herbs",
+    "aliases": ["oregano","basil","thyme","rosemary"],
+    "category": "spice",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["flavor"],
+    "notes": "Generic labeling for herb blends.",
+    "effect": "Safe and beneficial; contain antioxidants and anti-inflammatory compounds."
+    
+  },
+  {
+    "name": "coffee extract",
+    "category": "flavor",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["flavor","stimulant"],
+    "notes": "Flavoring from coffee beans.",
+    "effect": "Provides caffeine boost; may cause jitters or sleep issues if overconsumed."
+  },
+  {
+    "name": "vanilla extract",
+    "category": "flavor",
+    "type": "natural",
+    "e_number": "",
+    "functions": ["flavor"],
+    "notes": "Extracted from vanilla beans.",
+    "effect": "Safe and natural; provides antioxidants and pleasant flavor."
+  },
+  {
+    "name": "vanillin",
+    "category": "flavor",
+    "type": "synthetic",
+    "e_number": "",
+    "functions": ["flavor"],
+    "notes": "Synthetic vanilla flavor.",
+    "effect": "Considered safe; lacks beneficial compounds found in real vanilla."
+  }
+]
