@@ -10,7 +10,7 @@ Demo Link: https://ingredient-translator.netlify.app
 
 ---
 
-
+![Screenshot}(https://github.com/Shanna41/ingredient-label-translator/blob/main/Screenshot%20(51).png?raw=true)
 
 ---
 
@@ -159,6 +159,7 @@ npm run test
 MIT License — free to use, modify, and build upon.
 
 ---
+
 
 
 
