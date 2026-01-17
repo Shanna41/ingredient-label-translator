@@ -8,6 +8,16 @@ This project is intentionally simple, resilient, and easy to maintain — a prod
 
 ---
 
+# **Who This Is For**
+
+Designed for functional medicine practitioners, holistic wellness coaches, and ingredient-onscious consumers seeking clarity without complexity.
+
+---
+
+# **Why It Matters**
+
+Ingredient labels are often confusing, inaccessible, and overwhelming -- especially for patients navigating chronic illness. This tool empowers practitioners and consumers to decode labels instantly, without compromising privacy or usability.
+
 ## **✨ Features**
 
 - **Ingredient translation**  
@@ -143,5 +153,6 @@ npm run test
 MIT License — free to use, modify, and build upon.
 
 ---
+
 
 
