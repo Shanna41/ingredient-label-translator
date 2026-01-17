@@ -6,6 +6,12 @@ A lightweight, privacy‑first tool that translates confusing ingredient labels 
 
 This project is intentionally simple, resilient, and easy to maintain — a production‑ready tool designed to help people understand what’s in their products.
 
+Demo Link: https://ingredient-translator.netlify.app
+
+---
+
+
+
 ---
 
 # **Who This Is For**
@@ -153,6 +159,7 @@ npm run test
 MIT License — free to use, modify, and build upon.
 
 ---
+
 
 
 
